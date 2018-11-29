@@ -1,0 +1,45 @@
+// 主要是重写antd 的默认样式
+.ant-layout-content {
+	overflow: auto;
+	padding: 10px 16px !important;
+}
+
+.ant-layout-header {
+	padding: 0 24px !important;
+}
+
+.ant-modal-confirm-body {
+	.ant-modal-confirm-content {
+		margin-top: 0 !important;
+	}
+}
+
+.ant-table-thead>tr>th,
+.ant-table-tbody>tr>td {
+	padding: 12px 8px !important;
+	font-size: 12px !important;
+}
+
+.ant-form-item {
+	margin-bottom: 20px !important;
+}
+
+
+.ant-popover-inner-content {
+	.btns {
+		margin-top: 10px;
+	}
+
+	button {
+		width: 60px;
+	}
+
+	button:last-child {
+		float: right;
+	}
+}
+
+// .ant-btn {
+// 	font-size: 12px !important;
+// 	height: 28px !important;
+// }

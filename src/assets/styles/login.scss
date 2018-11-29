@@ -1,0 +1,40 @@
+.login-page {
+	display: flex;
+	justify-content: center;
+	padding-top: 24vh;
+	background: url('../images/login-bg2.jpg') no-repeat;
+	height: 100%;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+
+	/*更改谷歌浏览器input背景*/
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus,
+	input:-webkit-autofill:active {
+		/*延迟背景颜色载入*/
+		-webkit-transition-delay: 99999s;
+		-webkit-transition: color 99999s ease-out, background-color 99999s ease-out;
+	}
+
+	.login-form {
+		background: -webkit-linear-gradient(220deg, rgba(53, 57, 74, 0), #000);
+		border-radius: 5px;
+		padding: 30px 20px;
+		width: 300px;
+		height: 270px;
+
+		.login-form-button {
+			width: 100%;
+		}
+
+		.login-form-forgot {
+			float: right;
+		}
+
+		.ant-checkbox-wrapper {
+			color: white;
+		}
+	}
+}

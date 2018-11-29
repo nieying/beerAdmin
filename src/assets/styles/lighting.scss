@@ -1,0 +1,68 @@
+.lighting-page {}
+
+.add-gateway-light {
+	overflow: auto;
+	.light-form {
+		padding-right: 30%;
+	}
+}
+
+.light-form {
+	margin-top: 20px;
+	ul.flash-color {
+		li {
+			cursor: pointer;
+			position: relative;
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			margin: 0 10px;
+
+			.hasChecked {
+				position: absolute;
+				color: black;
+				width: 40px;
+				height: 40px;
+				text-align: center;
+				display: inline-block;
+				border-radius: 50%;
+			}
+		}
+	}
+
+	.btn-opt {
+		button {
+			width: 80px;
+		}
+
+		button:last-child {
+			margin-left: 30px;
+		}
+	}
+}
+
+// 录入酒桌
+.entry-wine {
+	table {
+		tr {
+			margin-bottom: 5px;
+
+			td {
+				cursor: pointer;
+				width: 35px !important;
+				height: 35px !important;
+				margin: 3px;
+				// border-radius: 50%;
+				// background-color: blanchedalmond;
+				text-align: center;
+				font-size: 12px;
+
+				&:hover {
+					background: #1890ff;
+				}
+			}
+		}
+
+	}
+}

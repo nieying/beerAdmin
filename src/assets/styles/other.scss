@@ -1,0 +1,288 @@
+// 签到墙 
+.sign-wall {
+	video {
+		width: 100%;
+	}
+
+	// video::-webkit-media-controls {
+	// 	display: none !important;
+	// }
+
+	.ant-row {
+		span {
+			display: inline-block;
+			width: 25px;
+			height: 25px;
+			background: #e5e5e5;
+			text-align: center;
+			box-sizing: border-box;
+			// transition: 1s;
+			// transform-style: preserve-3d;
+			// transform: rotateY(360deg);
+		}
+
+		.animate {
+			animation: circle 2s infinite linear;
+		}
+
+		@keyframes circle {
+			0% {
+				transform: rotateY(0deg);
+			}
+
+			100% {
+				transform: rotateY(180deg);
+			}
+		}
+	}
+}
+
+.all {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px 15%;
+
+	// transition: 10s;
+	// transform-style: preserve-3d;
+	// transform: rotateY(360deg);
+	span {
+		margin: 10px;
+	}
+
+}
+
+.animate1 {
+	animation: allAnimate 15s infinite linear;
+}
+
+@keyframes allAnimate {
+	0% {
+		transform: rotateY(0deg);
+	}
+
+	15% {
+		transform: rotatex(50deg);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	75% {
+		transform: rotateY(180deg);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+.c,
+.l,
+.i,
+.f,
+.e {
+	div {
+		display: flex;
+		flex-wrap: wrap;
+		overflow: hidden;
+	}
+}
+
+
+.c {
+	.c-1 {
+		height: 50px;
+	}
+
+	.c-2 {
+		width: 50px;
+		height: 200px;
+	}
+
+	.c-3 {
+		height: 50px;
+	}
+}
+
+.underline {
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+
+	div {
+		margin-top: 125px;
+		height: 50px;
+	}
+
+}
+
+.l {
+	.l-1 {
+		height: 250px;
+		width: 50px;
+	}
+
+	.l-2 {
+		height: 50px;
+	}
+}
+
+.i {
+	.i-1 {
+		height: 50px;
+		width: 50px;
+	}
+
+	.i-2 {
+		margin-top: 50px;
+		height: 200px;
+		width: 50px;
+	}
+}
+
+.f {
+	position: relative;
+
+	.f-1 {
+		height: 50px;
+	}
+
+	.f-2 {
+		height: 250px;
+		width: 50px;
+	}
+
+	.f-3 {
+		position: absolute;
+		top: 100px;
+		width: 100%;
+		height: 50px;
+
+	}
+}
+
+.e {
+	position: relative;
+
+	.e-1 {
+		height: 50px;
+	}
+
+	.e-2 {
+		height: 250px;
+		width: 50px;
+	}
+
+	.e-3 {
+		position: absolute;
+		top: 125px;
+		width: 100%;
+		height: 50px;
+
+	}
+
+	.e-4 {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 50px;
+
+	}
+}
+
+.sign-wall {
+	background-color: #000000;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+	a {
+		color: #ffffff;
+	}
+
+	#info {
+		position: absolute;
+		width: 100%;
+		color: #ffffff;
+		padding: 5px;
+		font-family: Monospace;
+		font-size: 13px;
+		font-weight: bold;
+		text-align: center;
+		z-index: 1;
+	}
+
+	#menu {
+		position: absolute;
+		bottom: 20px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.element {
+		// width: 120px;
+		// height: 160px;
+		// box-shadow: 0px 0px 12px rgba(0, 255, 255, 0.5);
+		// border: 1px solid rgba(127, 255, 255, 0.25);
+		text-align: center;
+		cursor: default;
+
+		img {
+			width: 50px;
+			height: 50px;
+		}
+	}
+
+	.element:hover {
+		box-shadow: 0px 0px 12px rgba(0, 255, 255, 0.75);
+		border: 1px solid rgba(127, 255, 255, 0.75);
+	}
+
+	.element .number {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		font-size: 12px;
+		color: rgba(127, 255, 255, 0.75);
+	}
+
+	.element .symbol {
+		position: absolute;
+		top: 40px;
+		left: 0px;
+		right: 0px;
+		font-size: 60px;
+		font-weight: bold;
+		color: rgba(255, 255, 255, 0.75);
+		text-shadow: 0 0 10px rgba(0, 255, 255, 0.95);
+	}
+
+	.element .details {
+		position: absolute;
+		bottom: 15px;
+		left: 0px;
+		right: 0px;
+		font-size: 12px;
+		color: rgba(127, 255, 255, 0.75);
+	}
+
+	button {
+		color: rgba(127, 255, 255, 0.75);
+		background: transparent;
+		outline: 1px solid rgba(127, 255, 255, 0.75);
+		border: 0px;
+		padding: 5px 10px;
+		cursor: pointer;
+	}
+
+	button:hover {
+		background-color: rgba(0, 255, 255, 0.5);
+	}
+
+	button:active {
+		color: #000000;
+		// background-color: rgba(0, 255, 255, 0.75);
+	}
+}
